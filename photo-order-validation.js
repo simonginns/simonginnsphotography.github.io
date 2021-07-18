@@ -33,7 +33,7 @@ form.addEventListener('submit', function (event) {
     
     if(!formError) {
         var xhr = new XMLHttpRequest();
-        xhr.open('PUT', 'https://bn9ex9ntnd.execute-api.ap-southeast-2.amazonaws.com/photoorder');
+        xhr.open('POST', 'https://bn9ex9ntnd.execute-api.ap-southeast-2.amazonaws.com/photoorder');
         xhr.setRequestHeader('Content-Type', 'application/json');
         xhr.onload = function() {
             if (xhr.status === 200) {
